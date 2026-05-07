@@ -6,10 +6,9 @@ Tired of re-entering the same gender, race, veteran status, and disability infor
 
 ## Screenshots
 
-<!-- TODO: Add screenshots -->
 | Popup Settings | Auto-Fill in Action |
 |:-:|:-:|
-| *Screenshot coming soon* | *Screenshot coming soon* |
+| <img src="screenshots/popup-settings.png" alt="Popup Settings" width="300"> | <img src="screenshots/autofill-in-action.png" alt="Auto-Fill in Action" width="600"> |
 
 ## Features
 
@@ -92,6 +91,9 @@ eeo-autofill/
 │   ├── icon16.png
 │   ├── icon48.png
 │   └── icon128.png
+├── screenshots/
+│   ├── popup-settings.png
+│   └── autofill-in-action.png
 └── README.md
 ```
 
