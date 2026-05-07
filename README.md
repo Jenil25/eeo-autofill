@@ -47,8 +47,7 @@ Tired of re-entering the same gender, race, veteran status, and disability infor
 
 ### Chrome Web Store
 
-<!-- TODO: Add Chrome Web Store link once published -->
-*Coming soon.*
+[Install from here!](https://chromewebstore.google.com/detail/eeo-autofill/cbajiekpgkhmnhipbkgfihpikakebjmp)
 
 ## How It Works
 
