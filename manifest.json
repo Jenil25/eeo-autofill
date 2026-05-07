@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "EEO AutoFill",
+  "version": "1.0.0",
+  "description": "Auto-fill EEO and demographic questions on job application forms with a single click.",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon16.png",
+      "48": "icons/icon48.png",
+      "128": "icons/icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "background": {
+    "service_worker": "background/service-worker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://*.myworkdayjobs.com/*",
+        "*://*.greenhouse.io/*",
+        "*://*.boards.greenhouse.io/*",
+        "*://*.lever.co/*",
+        "*://*.jobs.lever.co/*",
+        "*://*.icims.com/*",
+        "*://*.taleo.net/*",
+        "*://*.smartrecruiters.com/*",
+        "*://*.ashbyhq.com/*",
+        "*://*.jobvite.com/*",
+        "*://*.ultipro.com/*",
+        "*://*.breezy.hr/*",
+        "*://*.applytojob.com/*",
+        "*://*.workable.com/*",
+        "*://*.bamboohr.com/*",
+        "*://*.jazz.co/*",
+        "*://*.recruitee.com/*",
+        "*://*.dover.com/*",
+        "*://*.rippling.com/*",
+        "*://*/*career*",
+        "*://*/*jobs*",
+        "*://*/*apply*"
+      ],
+      "js": ["content/content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

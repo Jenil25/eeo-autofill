@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EEO AutoFill Settings</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>EEO AutoFill</h1>
+      <p class="subtitle">Configure your saved responses</p>
+    </header>
+
+    <!-- Toast notification -->
+    <div id="toast" class="toast hidden">Settings saved!</div>
+
+    <form id="settings-form">
+      <!-- Demographics Section -->
+      <section>
+        <h2>Demographics</h2>
+
+        <div class="field">
+          <label for="gender">Gender</label>
+          <select id="gender">
+            <option value="">-- Select --</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Non-binary">Non-binary</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="race">Race / Ethnicity</label>
+          <select id="race">
+            <option value="">-- Select --</option>
+            <option value="American Indian or Alaska Native">American Indian or Alaska Native</option>
+            <option value="Asian">Asian</option>
+            <option value="Black or African American">Black or African American</option>
+            <option value="Hispanic or Latino">Hispanic or Latino</option>
+            <option value="Native Hawaiian or Other Pacific Islander">Native Hawaiian or Other Pacific Islander</option>
+            <option value="White">White</option>
+            <option value="Two or More Races">Two or More Races</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+            <option value="Decline to self-identify">Decline to self-identify</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="veteran">Veteran Status</label>
+          <select id="veteran">
+            <option value="">-- Select --</option>
+            <option value="I am not a protected veteran">I am not a protected veteran</option>
+            <option value="I identify as one or more of the classifications of a protected veteran">I identify as one or more of the classifications of a protected veteran</option>
+            <option value="I don't wish to answer">I don't wish to answer</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="disability">Disability Status</label>
+          <select id="disability">
+            <option value="">-- Select --</option>
+            <option value="No, I do not have a disability">No, I do not have a disability</option>
+            <option value="Yes, I have a disability">Yes, I have a disability</option>
+            <option value="I don't wish to answer">I don't wish to answer</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Work Authorization Section -->
+      <section>
+        <h2>Work Authorization</h2>
+
+        <div class="field">
+          <label for="authorization">Work Authorization</label>
+          <select id="authorization">
+            <option value="">-- Select --</option>
+            <option value="Yes">Yes - Authorized to work in the US</option>
+            <option value="No">No - Not authorized</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="sponsorship">Sponsorship Required</label>
+          <select id="sponsorship">
+            <option value="">-- Select --</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+      </section>
+
+      <!-- Additional Section -->
+      <section>
+        <h2>Additional</h2>
+
+        <div class="field">
+          <label for="salary">Salary Expectation</label>
+          <input type="text" id="salary" placeholder="e.g. 120000 or 100000-130000">
+        </div>
+
+        <div class="field">
+          <label for="referral">"How did you hear about us?"</label>
+          <input type="text" id="referral" placeholder="e.g. LinkedIn, Company Website">
+        </div>
+      </section>
+
+      <div class="actions">
+        <button type="submit" id="save-btn">Save Settings</button>
+        <button type="button" id="fill-btn" class="btn-secondary">Fill Current Page</button>
+      </div>
+    </form>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
